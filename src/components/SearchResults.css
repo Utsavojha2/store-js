@@ -1,0 +1,144 @@
+.searchResults{
+    padding-bottom: 9px ;
+    min-height: 80vh;
+}
+
+.searchResults > section > img{
+    border-radius: 4px;
+    width:70vw;
+    height: 180px;
+}
+
+.searchResults > section {
+    margin: 80px 30px 10px 30px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 40px;
+}
+
+.searchResults > section > div > h2{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  font-size: 25px;
+  color: rgb(98, 98, 98);
+}
+
+.searchResults > section > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.searchResults > section > div > button {
+    background-color: rgb(235, 68, 68);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border : none;
+    border-radius: 5px;
+    padding: 4px 0;
+}
+
+.searchResults > section > div > button:hover{
+    cursor: pointer;
+    background-color: rgb(156, 0, 0);
+}
+
+.searchResults__notFound{
+    display: grid; 
+    place-items: center;
+    margin-top: 100px;
+}
+
+.searchResults__notFound > h2{
+    font-size: 36px;
+    color: #617d98 ;
+}
+
+.searchResults__notFound > button{
+    background-color: #ab7a5f;
+    color: white;
+    margin-top: 14px;
+    border: none;
+    outline-width: 0px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchResults__notFound > button:hover{
+    background-color: #b9734d;
+    cursor: pointer;
+}
+
+.searchResults__foundItems{
+    margin-top: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.searchResults__foundItems > h2{
+    margin-bottom: 10px;
+    font-size: 27px;
+    color: #617d98;
+    margin-left: 40px;
+}
+
+
+.resultsPage{
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px , 1fr));
+    grid-gap: 22px;
+}
+
+.resultsPage > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+.resultsPage__width{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.resultsPage > div > h4{
+    text-align: center;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.results__product{
+    padding: 12px 8px;
+    margin: 0 8px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results__product > button{
+    border : none;
+    background-color: #ab7a5f;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 15px;
+    outline-width: 0px;
+}
+
+.results__product > button:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+
