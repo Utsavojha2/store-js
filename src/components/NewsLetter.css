@@ -1,0 +1,116 @@
+.newsletter{
+    background: whitesmoke;
+     padding: 12px;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.newsletter > * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.newsletter > img{
+    width: 520px;
+    height: 450px;
+    border-radius: 30px;
+}
+
+.newsletter__info{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.newsletter__info > h3{
+    font-size: 37px;
+    margin-bottom: 28px;
+}
+
+.newsletter__info > p{
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.newsletter__infoInput{
+    display: flex;
+    align-items: center;
+}
+
+.newsletter__infoInput > input{
+    text-indent: 2%;
+    width: 350px;
+    height: 28px;
+    border: 2px solid black;
+    outline-width: 0px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.newsletter__infoInput > button{
+    width: 110px;
+    height: 34px;
+    padding : 0px 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0px 6px 6px 0px;
+    outline-width: 0;
+    cursor: pointer;
+    background: #ab7a5f;
+    color: whitesmoke;
+}
+
+.copyright{
+    margin-top: 15px;
+    padding: 22px;
+    background: black;
+    color: white;
+}
+
+.copyright__position{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.copyright > p{
+    text-align: center;
+}
+
+
+@media screen and (max-width : 768px){
+    .newsletter{
+        margin-top: -42px;
+       flex-direction: column;
+    }
+
+    .newsletter > img{
+        margin: 25px 20px 0px 5px;
+        width: 360px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+
+    .newsletter__info > *{
+        max-width: 360px;
+    }
+
+    .newsletter__info > h3{
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .newsletter__underline{
+        display: block;
+        margin-top: -20px;
+        width: 90px;
+        height: 4px;
+        background-color: #c48d70;
+        margin-bottom: 20px;
+        margin-left: 145px;
+    }
+}
